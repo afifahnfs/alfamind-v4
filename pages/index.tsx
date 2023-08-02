@@ -8,14 +8,12 @@ import { useEffect } from "react";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  useEffect(() => {
-    if (isBrowser) {
-      // Redirect to the Play Store URL for Android devices
-      window.location.href =
-        "https://play.google.com/store/apps/details?id=id.meteor.alfamind&pli=1";
-      return null; // Return null to prevent rendering anything on the page
-    }
-  }, []);
+  if (isBrowser) {
+    // Redirect to the Play Store URL for Android devices
+    window.location.href =
+      "https://play.google.com/store/apps/details?id=id.meteor.alfamind&pli=1";
+    return null; // Return null to prevent rendering anything on the page
+  }
 
   return (
     <>

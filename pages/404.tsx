@@ -8,14 +8,5 @@ export default function Custom404() {
       "https://play.google.com/store/apps/details?id=id.meteor.alfamind&pli=1";
     // return null; // Return null to prevent rendering anything on the page
   });
-  return (
-    <div className={styles.bg_error}>
-      <div>
-        <h1 className={styles.bg_404}>404</h1>
-        <div className={styles.wrap_text}>
-          <h2 className={styles.text}>This page could not be found.</h2>
-        </div>
-      </div>
-    </div>
-  );
+  return <div className={styles.bg_error}></div>;
 }
